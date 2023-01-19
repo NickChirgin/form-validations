@@ -14,7 +14,24 @@
     display: flex;
     justify-content: space-between;
   }
-
+& button {
+  min-width: 325px;
+  height: 60px;
+  margin-left: 25px;
+  border: none;
+  background: #050522;
+  box-shadow: -1px 1px 10px rgba(5, 5, 34, 0.15);
+  border-radius: 15px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFDE69;
+  text-shadow: -1px 1px 10px rgba(255, 222, 105, 0.15);
+  margin-bottom: 10px;
+}
   &__welcome {
     margin: 25px 0 0 25px;
     font-family: 'Segoe UI';
@@ -52,10 +69,27 @@
     margin-bottom: 0;
   }
 
+&__reg {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 25px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #050522;
+
+  & span:nth-child(2) {
+    color: #EF5858;
+    cursor: pointer;
+  }
+}
   &__close {
     padding-bottom: 20px;
     width: 30px;
     aspect-ratio: 1/1;
+    cursor: pointer;
   }
 
   &__input {
@@ -85,7 +119,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-
+    height: fit-content;
     & label {
       position: relative;
       left: -50px;
@@ -94,7 +128,7 @@
     & input {
       cursor: pointer;
       position: relative;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
     }
 
     & span {

@@ -18,6 +18,11 @@ const Login = () => {
         <label htmlFor="rem">Remember me</label>
         <span>Forgot password?</span>
       </div>
+      <button type="submit" className={style.form__button}>Login</button>
+      <div className={style.form__reg}>
+        <span>Don't have an account?</span>
+        <span>Register</span>
+      </div>
     </form>
   )
 }
