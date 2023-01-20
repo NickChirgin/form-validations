@@ -1,0 +1,42 @@
+.span {
+  font-size: 9.5px;
+  color: red;
+  padding: 3px;
+  display: none;
+  margin: 0;
+}
+
+.input {
+  box-sizing: border-box;
+  background-color: transparent;
+  padding-left: 20px;
+  width: 325px;
+  min-height: 50px;
+  border: 2px solid #050522;
+  border-radius: 10px;
+  z-index: 1;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.label {
+  position: relative;
+  background-color: #FFECAA;
+  width: fit-content;
+  padding: 0 5px;
+  z-index: 2;
+  left: 20px;
+  top: 10px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+input:invalid[focused=true]~span {
+  display: block;
+}

@@ -1,0 +1,70 @@
+.register {
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 25px;
+  flex-direction: column;
+  width: 375px;
+  height: 568px;
+  margin-top: 244px;
+  background: #FFECAA;
+  box-shadow: 0px 2px 15px 2px rgba(255, 236, 170, 0.4);
+  border-radius: 40px 40px 30px 30px;
+
+  & img {
+    width: 30px;
+    aspect-ratio: 1/1;
+    position: relative;
+    right: -300px;
+    top: -70px;
+    cursor: pointer;
+  }
+
+  &__welcome {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #050522;
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #050522;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__login {
+    text-align: center;
+  }
+
+  & button {
+    margin-top: 10px;
+    background: #050522;
+    min-width: 325px;
+    min-height: 60px;
+    box-shadow: -1px 1px 10px rgba(5, 5, 34, 0.15);
+    border-radius: 15px;
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFDE69;
+    text-shadow: -1px 1px 10px rgba(255, 222, 105, 0.15);
+    border: none;
+  }
+
+  &__span {
+    color: #EF5858;
+    cursor: pointer;
+  }
+
+}
