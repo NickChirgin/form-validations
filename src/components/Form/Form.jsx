@@ -11,9 +11,14 @@ const Form = () => {
     setFunc(prev => !prev)
   }
 
+  const change = () => {
+    setIsLoginOpen(prev => !prev)
+    setIsRegOpen(prev => !prev)
+  }
+
   return (
     <div className={style.form}>
-      {isLoginOpen ? <Login closeHandler={() => loginHandler(setIsLoginOpen)}/> : isRegOpen ? <Register closeHandler={() => loginHandler(setIsRegOpen)}/> : <>
+      {isLoginOpen ? <Login closeHandler={() => loginHandler(setIsLoginOpen)} clickHandler={change}/> : isRegOpen ? <Register closeHandler={() => loginHandler(setIsRegOpen)} clickHandler={change}/> : <>
         <h2 className={style.form__title}>Welcome</h2>
       <p className={style.form__subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
       <button className={style.form__register} onClick={() => loginHandler(setIsRegOpen)}>Create account</button>

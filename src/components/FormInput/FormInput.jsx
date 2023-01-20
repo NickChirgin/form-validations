@@ -3,7 +3,7 @@ import style from './FormInput.module.scss'
 
 const FormInput = (props) => {
   const [focus, setFocus] = useState(false)
-  const {label, id, onChange, errorMessage, ...inputProps} = props
+  const {label, id, onChange, errorMessage, cfr, ...inputProps} = props
 
   const handleFocus = () => {
     setFocus(true)
@@ -11,7 +11,7 @@ const FormInput = (props) => {
   return (
     <div>
       <label className={style.label}>{label}</label>
-      <input {...inputProps} onChange={onChange} className={style.input} onBlur={handleFocus} focused={focus.toString()}/>
+      <input {...inputProps} onChange={onChange} className={style.input} onBlur={handleFocus} focused={focus.toString()} onFocus={() => cfr === "confirmPassword" && setFocus(true)}/>
       <span className={style.span}>{errorMessage}</span>
     </div>
   )
