@@ -27,7 +27,6 @@ const Register = ({closeHandler, clickHandler}) => {
       <button type='submit' className={style.register__button}>Register</button>
       <p className={style.register__login}>Already have an account? <span className={style.register__span} onClick={clickHandler}>Login</span></p>
     </form>
-    
   )
 }
 
