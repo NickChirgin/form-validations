@@ -1,6 +1,7 @@
 import style from './Login.module.scss'
 import close from '../../assets/Close.svg'
 
+
 const Login = ({closeHandler, clickHandler}) => {
   return (
     <form action="" className={style.form}>
